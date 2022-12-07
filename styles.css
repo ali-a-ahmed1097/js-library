@@ -56,18 +56,19 @@ h1:first-of-type {
 
 #books > div {
     background-color: blanchedalmond;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     box-sizing: border-box;
     border: 1px solid black;
 }
 
 .card {
     padding: 8px;
+    overflow: hidden;
 }
 
 .new {
-    padding-top: 70px;
+    padding-top: 90px;
     text-align: center;
     font-size: 90px;
     cursor: pointer;
