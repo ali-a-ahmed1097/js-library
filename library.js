@@ -1,5 +1,5 @@
 let books = [];
-const cardButtonText = ['Toggle Read', 'Edit', 'Remove'];
+const cardButtonText = ['Toggle Read', 'Remove'];
 const cardDivText = ['Title: ', 'Author: ', 'Pages: '];
 
 function Book(title, author, pages, read) {
@@ -57,7 +57,7 @@ function addBook() {
         else
             statusDiv.textContent = 'Status: Not Read';
 
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 2; i++) {
             newCard.appendChild(document.createElement('button'));
             newCard.querySelector('button:last-of-type').textContent = cardButtonText[i];
         }
@@ -72,10 +72,6 @@ function addBook() {
         });
 
         newCard.querySelector('button:nth-of-type(2)').addEventListener('click', function () {
-            
-        });
-
-        newCard.querySelector('button:nth-of-type(3)').addEventListener('click', function () {
             delete books[books.length - 1];
             newCard.remove();
         });
