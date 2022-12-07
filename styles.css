@@ -30,12 +30,13 @@ h1:first-of-type {
     gap: 6px;
     padding: 8px;
     box-sizing: border-box;
+    background-color: lightcyan;
 }
 
 #cancel {
     align-self: flex-end;
     cursor: pointer;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 #form > div:last-of-type {
@@ -44,4 +45,30 @@ h1:first-of-type {
 
 .hide {
     display: none;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+#books > div {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.card {
+    padding: 8px;
+}
+
+.new {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 90px;
+    cursor: pointer;
 }
