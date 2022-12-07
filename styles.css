@@ -1,0 +1,47 @@
+h1:first-of-type {
+    text-align: center;
+}
+
+.overlay {
+    width: 100vw;
+    height: 200vh;
+    margin: 0;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    margin-left: -8px;
+    margin-top: -25px;
+}
+
+.form {
+    --width: 350px;
+    --height: 450px;
+    background-color: white;
+    width: var(--width);
+    height: var(--height);
+    opacity: 1.0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: calc(var(--height) / -2) 0px 0px calc(var(--width) / -2);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#cancel {
+    align-self: flex-end;
+    cursor: pointer;
+    background-color: orange;
+}
+
+#form > div:last-of-type {
+    align-self: flex-end;
+}
+
+.hide {
+    display: none;
+}
